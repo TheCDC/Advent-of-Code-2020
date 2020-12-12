@@ -1,9 +1,11 @@
+from advent_of_code_2020.problem import ProblemBase
 import advent_of_code_2020.solutions as solutions
 from advent_of_code_2020.solutions import SOLUTIONS
+from time import time
 print("welcome to advent of code 2020")
 index = -1
 while index < 0 or (index >= len(SOLUTIONS)):
-    print("\n".join([f"{index}: {item.__class__.__name__}" for index, item in enumerate(
+    print("\n".join([f"{index}: {item.__name__}" for index, item in enumerate(
         SOLUTIONS)]))
     try:
         index = int(input("Choose"))
@@ -18,5 +20,9 @@ while index < 0 or (index >= len(SOLUTIONS)):
             problem_data.append(input())
         except EOFError:
             break
-    solution = SOLUTIONS[index].solve("\n".join(problem_data))
-    print("Solution:", solution)
+    ti = time()
+    problem_instance: ProblemBase = SOLUTIONS[index]()
+    solution = problem_instance.solve("\n".join(problem_data))
+    tf = time()
+
+    print("Solution:", solution, "in", tf-ti)
