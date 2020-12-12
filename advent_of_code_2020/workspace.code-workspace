@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {},
+	"extensions": {
+		"recommendations": [
+			"codezombiech.gitignore",
+			"eamodio.gitlens",
+			"ms-python.vscode-pylance",
+			"ms-python.python",
+			"lextudio.restructuredtext",
+			"VisualStudioExptTeam.vscodeintellicode"
+		]
+	}
+}
