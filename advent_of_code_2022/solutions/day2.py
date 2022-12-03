@@ -3,8 +3,8 @@ from enum import Enum
 
 
 class MovesEnum(Enum):
-    rock = 1
     paper = 2
+    rock = 1
     scissors = 3
 
 
@@ -16,10 +16,11 @@ letter_to_move = {
     "y": MovesEnum.paper,
     "z": MovesEnum.scissors,
 }
-moves_cycle = (MovesEnum.paper, MovesEnum.rock, MovesEnum.scissors)
+moves_cycle = tuple(MovesEnum)
 
 
 def beats(move_a: MovesEnum, move_b: MovesEnum) -> bool:
+
     idx_a = moves_cycle.index(move_a)
     idx_b = moves_cycle.index(move_b)
     diff = 0
@@ -33,10 +34,10 @@ def beats(move_a: MovesEnum, move_b: MovesEnum) -> bool:
 
 def search_beats_result(move: MovesEnum, result: bool) -> MovesEnum:
     moves_available = set(MovesEnum) - {move}
-    for m in moves_available:
-        if beats(m, move) == result:
-            return m
-    raise RuntimeError("wtf")
+    options = [m for m in moves_available if beats(m, move) == result]
+    if len(options) != 1:
+        raise RuntimeError("Logic erorr")
+    return options[0]
 
 
 def score_round(me: MovesEnum, them: MovesEnum):
@@ -58,14 +59,10 @@ class Day2_2(ProblemBase):
         score = 0
         for line in data.lower().split("\n"):
             move_them = letter_to_move[line[0]]
-            outcome_me = line[-1]
-            if outcome_me == "y":  # we must draw
-                move_me = move_them
-            elif outcome_me == "x":  # we must lose
-                move_me = search_beats_result(move_them, False)
-            elif outcome_me == "z":  # we must win
-                move_me = search_beats_result(move_them, True)
-            else:
-                RuntimeError("wtf")
+            move_me = {
+                "y": lambda: move_them,
+                "x": lambda: search_beats_result(move_them, False),
+                "z": lambda: search_beats_result(move_them, True),
+            }[line[-1]]()
             score += score_round(move_me, move_them)
         return score
