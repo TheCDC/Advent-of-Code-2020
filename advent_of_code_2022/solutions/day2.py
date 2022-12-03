@@ -3,9 +3,9 @@ from enum import Enum
 
 
 class MovesEnum(Enum):
-    paper = 2
-    rock = 1
-    scissors = 3
+    paper = 2  # paper beats rock
+    rock = 1  # rock beats scissors
+    scissors = 3  # scissors beats paper
 
 
 letter_to_move = {
@@ -46,12 +46,10 @@ def score_round(me: MovesEnum, them: MovesEnum):
 
 class Day2_1(ProblemBase):
     def solve(self, data: str):
-        score = 0
-        for line in data.lower().split("\n"):
-            them = letter_to_move[line[0]]
-            me = letter_to_move[line[-1]]
-            score += me.value + 6 * beats(me, them) + 3 * (me == them)
-        return score
+        return sum(
+            score_round(letter_to_move[line[-1]], letter_to_move[line[0]])
+            for line in data.lower().split("\n")
+        )
 
 
 class Day2_2(ProblemBase):
@@ -60,9 +58,9 @@ class Day2_2(ProblemBase):
         for line in data.lower().split("\n"):
             move_them = letter_to_move[line[0]]
             move_me = {
-                "y": lambda: move_them,
-                "x": lambda: search_beats_result(move_them, False),
-                "z": lambda: search_beats_result(move_them, True),
+                "y": lambda: move_them,  # draw
+                "x": lambda: search_beats_result(move_them, False),  # lose
+                "z": lambda: search_beats_result(move_them, True),  # win
             }[line[-1]]()
             score += score_round(move_me, move_them)
         return score
