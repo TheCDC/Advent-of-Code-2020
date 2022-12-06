@@ -12,7 +12,6 @@ class Day5_1(ProblemBase):
             for col in [
                 [char for char in line if char not in CHARS_IGNORED][::-1]
                 for line in list(zip(*(s_board.split("\n")[:-1])))
-                # if char not in CHARS_IGNORED
             ]
             if col
         ]
@@ -36,7 +35,6 @@ class Day5_2(Day5_1):
         board, moves = self.lines(data)
         for m in moves:
             m_count, m_from, m_to = m
-            # pprint((list(enumerate(board)), m))
             substack = board[m_from - 1][-m_count:]
             board[m_to - 1] = board[m_to - 1] + substack
             board[m_from - 1] = board[m_from - 1][:-m_count]
