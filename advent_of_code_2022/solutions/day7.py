@@ -15,6 +15,7 @@ class Node:
         return existing
 
     def upsert_child(self, name: str, size: int, children=None) -> "Node":
+        children = children if children else []
         existing = self.get_children(name)
         if existing:
             matched = existing[0]
@@ -22,14 +23,18 @@ class Node:
             matched.children = children
             matched.size = size
             matched.parent = self
+        else:
+            self.children.append(
+                Node(name=name, size=size, children=children, parent=self)
+            )
 
     def pretty(self, depth=0):
-        yield self.name
+        yield " ".join(["-" * depth, self.name])
         for c in self.children:
-            yield " ".join["-" * depth, c.pretty(depth + 1)]
+            yield from c.pretty(depth + 1)
 
     def __str__(self, depth=-0) -> str:
-        return "\n".join(self.pretty)
+        return "\n".join(self.pretty())
 
 
 class Day7_1(ProblemBase):
@@ -38,6 +43,7 @@ class Day7_1(ProblemBase):
 
     def solve(self, input_string: str) -> int:
         node = Node("/", [], None)
+        root = node
         lines = self.lines(input_string)
         while True:
             try:
@@ -51,7 +57,11 @@ class Day7_1(ProblemBase):
                         dir_target = args[1]
                         if dir_target == "..":
                             node = node.parent
+                        elif dir_target == "/":
+                            node = root
                         else:
+                            # known directory
+
                             node = node.get_children(name=dir_target)[0]
                 elif tokens[0].isdigit():
                     # a file
@@ -60,10 +70,12 @@ class Day7_1(ProblemBase):
                     node.upsert_child(name=name, size=size)
                 elif tokens[0] == "dir":
                     # directory
+                    name = tokens[1]
                     node.upsert_child(name=name, size=None)
 
             except StopIteration:
                 break
+        print(root)
 
 
 class Day7_2(Day7_1):
