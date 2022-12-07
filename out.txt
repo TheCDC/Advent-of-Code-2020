@@ -14,488 +14,488 @@ welcome to advent of code 2020
 12: Day7_1
 13: Day7_2
 ChoosePaste problem data lines:
- /
-- gldg.jrd
-- qffvbf
--- dcqf
---- gcjmpnsl
----- gldg.jrd
--- grcj
---- grgtnhn.zdn
--- hwllqcd
---- frzf.mzc
---- gldg.jrd
---- jjtjjlsr.dnl
---- mfmps.vjt
---- nscv.wvb
--- jrhp.hgg
--- nscv.wvb
--- stnrzs
---- gmtmfpmb
----- hswhjhmj
----- rsgsrn
---- jrhp
----- fpmnp
------ grcj.tcj
----- grcj.scb
----- hjglg
------ tctfwpf.jhv
----- hwvzv
------ mfmps
------- rjrmbqwr.wbj
---- rhf
----- dcgvw
----- grcj.qzh
----- zcjh
------ prqhbzl.hls
----- zgqjbf
---- wzjtd
----- bnjj
------ zjdvggcz.fhr
----- dhhpf
------ gldg.jrd
------ wcfpqqp.tcf
----- grcj
------ bcbspw
------- rsgsrn
------ mpq
------- mfmps
------ pjzw
------- cpffwn
-------- rnwqngz
----- jqmnp
------ nscv.wvb
------ rsgsrn
------ wcfpqqp.tcf
----- mfmps.dht
----- mrgh
------ grcj
------- bbzm.sbq
----- rsgsrn
----- wqwwwfd
------ blfr.lqh
----- zgqjbf.bjh
--- vzgpfd
---- grcj
----- jbfsbsnn.sgj
----- mfmps
------ dcgvw
------ grcj.sdl
------ mfmps
------- ndqjhlhp
-------- wcfpqqp.tcf
------ nscv.wvb
------ zfjhqtp
----- mfqjssr
------ gldg.jrd
------ grcj.rgv
----- vzgpfd
------ hqnfwtj
------- cjpqzq
------- cnsm.mdt
------- fpmjd
------- rsgsrn
------ mtqzh
------- bjnhtwg
------- gldg.jrd
------- jgdhm.wrb
------- nbnzfc
-------- rtrbhtb
--------- dcgvw
--------- jrhp.fsj
--------- sgm
---------- tzzfc
----------- cdmht.jjn
-------- wcfpqqp.tcf
-------- wsww.gdd
------ thd.cgt
------ vgtvctd
------- dtm
-------- pmsvz
--------- qctt
---------- wzh.hwv
-------- zdzv
--------- fdvth.rvs
--------- jjslblcb
---------- grcj
----------- wcfpqqp.tcf
--------- tvq
---------- jrhp.qnf
--------- zgqjbf
---------- gldg.jrd
------- gghjmgqs
-------- qqczbf
------- grcj
-------- qnn
--------- jmst.mld
------- lcpmlcpn
-------- cbzpzsj
--------- gldg.jrd
--------- mfmps.cfl
--------- qpl.jhn
--------- sqt.njp
-------- frzslwl.qgd
-------- grcj
-------- pvzslpsn.ztw
-------- rsgsrn
------- njpnzq.phl
------- rsgsrn
------- tzl
------- vcpzw.qsh
------ vzgpfd
------- cgvcwrfn.jjq
------- dcgvw
------- gqqcqtp.hvq
------- lnn
-------- dqqvbcf
-------- mczrlg.vmz
-------- wqccmlvq
--------- grcj
---------- gldg.jrd
---------- jbqzth.rcj
---------- jqzmc.sfm
-------- zgqjbf
--------- nptpqjd.hzz
------- pzft.smj
------- qfszrvm.gnq
------- rwrt
-------- jrhp.cmf
-------- mfmps
------- thrthq
-------- jrhp.fcj
------- zgqjbf
-------- dpbnq
--------- vzgpfd
---------- bhdtwf
-------- mfmps
--------- mfmps.lbq
-------- rbnzhhn
--------- svwv.ldj
------ zgqjbf
----- zgqjbf
------ cmrdgjl.hbd
---- lvhfqr
----- njzv
------ bmqh.snz
------ wcfpqqp.tcf
----- sgwzscp
------ rnjrj
------- blrzc
------- plb.dlq
------ vzgpfd
------ zgqjbf.jwf
------ zjh
----- zgqjbf
------ cmn.gcw
------ llsnw.phb
---- zgvjpnf
----- nscv.wvb
----- wzm
-- qjjgh
--- cwslqsb
---- mqzfncgb.jbf
--- dcgvw
--- fvmmd
---- grcj
----- bjgc
----- mfmps
---- jrhp
----- wpqh.jfl
---- sqmbncp
----- tzqqm.jqr
---- vzgpfd
----- hqg.qzn
----- mvqgb
------ vzgpfd
------- grcj.wwl
----- vqdtns
----- wrnhw.mzf
----- zgqjbf.zzb
--- jrhp
---- dcgvw
---- vzgpfd
---- wcfpqqp.tcf
--- vflhljrl
---- gldg.jrd
---- nscv.wvb
--- vzgpfd
-- vpjqpqfm
--- gfff
--- grcj
---- grcj
----- fcdz
------ dpwvm
------- chjbpb
-------- pzr
------- dcgvw
------- dsc
-------- nscv.wvb
------- fclhnmz.cbp
------ rmmw
------- cqzvcv
-------- zgqjbf
--------- nscv.wvb
------- hld
-------- pwqs
-------- wfsgg.jgp
------- jrhp.nnb
------- pfvthfw
-------- grcj
--------- jrhp
------- qjmfdjwz.phc
----- fswpmd
------ gldg.jrd
----- gvjjjp
------ pvzz
------- nqfzj
------- nscv.wvb
------- qthbl
-------- dcgvw
------ wdmm.vjv
----- jrhp
------ fct.dcg
---- mdvcmm
----- crscnnh
------ tzbjl
------- wcfpqqp.tcf
----- dcdtm.tvp
----- ftzvrpcw.pff
----- nnc
----- nscv.wvb
----- ssvd
------ bsqhzw
----- zvvhlw
------ gldg.jrd
---- mfmps
---- nscv.wvb
--- hjdwrt
---- jrhp.fjj
---- rpsrm
----- wmpnpjzd
---- rsgsrn
---- rzn
----- wcfpqqp.tcf
---- tvlmvr.flr
---- vlbrnq
----- ccznjt.fqr
---- vrcns
----- dcnnnhn.vhg
---- wcfpqqp.tcf
---- zhwm
----- glgs
------ tcw.qnb
----- grcj
------ qnqb.jqg
----- jrhp
------ pgf.ltc
--- mfmps
---- dcm
----- mnrvqg.vmm
---- mrcn.wtb
---- mzdgdh.ctn
--- plrrsmph
---- gldg.jrd
---- jzbswh
---- wcfpqqp.tcf
---- zgqjbf
----- cfdr
------ bzctmbvt.qzr
----- hdsnc
------ ccds.vlz
--- rgqtzc
---- dblznh
----- tdv.mwq
---- lfpdqm
----- cgvnspv
------ qnmg
------- grcj
-------- pbn
--------- dqt.dtv
------- jbvrp.psn
------- vfgds.tjv
------- vtlzgq.dfd
------- zbvgc.whr
----- dthhvrln
------ wvvczgd.wzs
----- jrhp
------ bqf
------- clgjfn
-------- lwnpggm.mfp
------- fcr
------- mcdqnw.prv
------- zthdgfhl.lqq
------ rgpwf
------ zjhw
------- cbwrrzwh
-------- zgqjbf.ffm
------- fdz
-------- wbtzsr
--------- hzf
------- grcj
-------- dcgvw
-------- rhncgdll
--------- vnmbhbhc
---------- lfcggd.ccw
-------- vzgpfd
--------- zdsp.tzg
--------- zmjjvf.glv
-------- zgv.ndt
------- grcj.szv
------- mfmps
------- mmg.cpr
------- nmq
------- pbnfdq
-------- frqdqhw
-------- fvjc
--------- pcvcpptp.dsr
--------- tszsbtjp.lfl
-------- svwd
-------- tngzpl.lml
-------- zqhjjjd
--------- mpdlcjl
--------- wfw
---------- jrhp
----------- dcgvw
----------- pwrjq
------------ vclfmjf.tfp
----------- zmnv
------------ mfmps.wzw
---------- lwg
----------- jrhp
------------ dcgvw
----------- lwcfwjh.dtm
----------- vnl
---------- rndnc
---------- zhrtj
----------- rsgsrn
------- tvmswr
------- zgqjbf
-------- zqpvm
----- vzgpfd
------ djqqfrbn.cps
---- lmnmthm
----- fqdm.bvm
----- jdsn.zpr
----- nscv.wvb
----- stvscbg
---- mfmps
----- gldg.jrd
----- jrhp
----- lvjg
------ wcfpqqp.tcf
----- nscv.wvb
----- vzgpfd
------ hjqng.glq
----- zgqjbf
------ dqmbmlrf
------- bdvhvwct
-------- gldg.jrd
-------- grcj
--------- vzgpfd
---------- mfmps.tnr
------- bzhhm.rqp
------- fgqbj.bcb
------- fjfq.qbv
------- hfvvlvqg.sqh
------- ppljtfjr.hpm
------- zgqjbf
-------- lpzsww
------ grcj
------- bwvgdqdr
------ hlsr
------- vzgpfd
----- zvpnq
------ gjbzp.nqg
------ mfmps.gfp
------ rwddqchj
------- gnsndln
-------- zgqjbf.wlm
------ ssw
------- grcj
-------- gldg.jrd
------ zgqjbf
------- vzgpfd.nbz
------- zdnv.sss
---- pcplzs
----- grcj
----- rsgsrn
----- shmsp
------ jrhp
------- tmlntm
----- tgc.lzp
----- thbznt
------ mdj.lll
------ wcfpqqp.tcf
----- vtqlszrs
------ dcgvw
----- vzgpfd
------ hccgnjqh.cdl
------ jrhp
------- bgbmnpq
------- dcgvw
------ jvq
------ mfmps
------ ppdfjqbr
------- dcgvw
------- gldg.jrd
------- glhjmpm.sjt
------- vthf
-------- vzgpfd.qlg
------- vzgpfd
-------- mfmps.zsq
------- zgqjbf.scm
------ vdpvzhrs
------- vcwrr.jvb
------ vzgpfd
------ wclfwhv.chh
------ wghzqb
------- grcj
-------- nscv.wvb
-------- qpqgf
------- hbngsg
-------- bzwnwz.tgj
-------- hwjrgtt.pdm
-------- mthnljv
--------- jrhp.rvp
------- jzvh.pvf
------- smrq.lvp
---- pvfbjm
----- nscv.wvb
---- rnl
----- dqlncnds.dfn
----- nswpmqdd
------ rtpbgm.gbf
---- wqgp
----- pdfcfc
---- zgqjbf
----- bvlbrq.pdj
----- jnjqhzh
------ htdqwdc.nsr
------ ppclcr.rms
------ zmjr.hnt
----- smrzsq
------ ljvbmm
------- jmcbrbdl.ccr
----- vzgpfd
------ bhwd
------- gldg.jrd
------- lmjr
-------- dcgvw
------- mfmps
-------- grcj
--------- zwbvbfj
------ dcgvw
------ hdcqm
------- qfb.vhv
------ swcvhtmp
------- rrfnsqw.rvh
------ zgqjbf
------- mfmps.jsq
------- rsgsrn
------- zlz
------ zhtlsdb.ncw
--- rsgsrn
--- wjpbr.hdr
--- zlv
---- nscv.wvb
-Solution: None in 0.001999378204345703
+ [ ] /
+- [x] gldg.jrd
+- [ ] qffvbf
+-- [ ] dcqf
+--- [ ] gcjmpnsl
+---- [x] gldg.jrd
+-- [ ] grcj
+--- [x] grgtnhn.zdn
+-- [ ] hwllqcd
+--- [x] frzf.mzc
+--- [x] gldg.jrd
+--- [x] jjtjjlsr.dnl
+--- [x] mfmps.vjt
+--- [x] nscv.wvb
+-- [x] jrhp.hgg
+-- [x] nscv.wvb
+-- [ ] stnrzs
+--- [ ] gmtmfpmb
+---- [x] hswhjhmj
+---- [x] rsgsrn
+--- [ ] jrhp
+---- [ ] fpmnp
+----- [x] grcj.tcj
+---- [x] grcj.scb
+---- [ ] hjglg
+----- [x] tctfwpf.jhv
+---- [ ] hwvzv
+----- [ ] mfmps
+------ [x] rjrmbqwr.wbj
+--- [ ] rhf
+---- [x] dcgvw
+---- [x] grcj.qzh
+---- [ ] zcjh
+----- [x] prqhbzl.hls
+---- [x] zgqjbf
+--- [ ] wzjtd
+---- [ ] bnjj
+----- [x] zjdvggcz.fhr
+---- [ ] dhhpf
+----- [x] gldg.jrd
+----- [x] wcfpqqp.tcf
+---- [ ] grcj
+----- [ ] bcbspw
+------ [x] rsgsrn
+----- [ ] mpq
+------ [x] mfmps
+----- [ ] pjzw
+------ [ ] cpffwn
+------- [x] rnwqngz
+---- [ ] jqmnp
+----- [x] nscv.wvb
+----- [x] rsgsrn
+----- [x] wcfpqqp.tcf
+---- [x] mfmps.dht
+---- [ ] mrgh
+----- [ ] grcj
+------ [x] bbzm.sbq
+---- [x] rsgsrn
+---- [ ] wqwwwfd
+----- [x] blfr.lqh
+---- [x] zgqjbf.bjh
+-- [ ] vzgpfd
+--- [ ] grcj
+---- [x] jbfsbsnn.sgj
+---- [ ] mfmps
+----- [x] dcgvw
+----- [x] grcj.sdl
+----- [ ] mfmps
+------ [ ] ndqjhlhp
+------- [x] wcfpqqp.tcf
+----- [x] nscv.wvb
+----- [x] zfjhqtp
+---- [ ] mfqjssr
+----- [x] gldg.jrd
+----- [x] grcj.rgv
+---- [ ] vzgpfd
+----- [ ] hqnfwtj
+------ [x] cjpqzq
+------ [x] cnsm.mdt
+------ [x] fpmjd
+------ [x] rsgsrn
+----- [ ] mtqzh
+------ [x] bjnhtwg
+------ [x] gldg.jrd
+------ [x] jgdhm.wrb
+------ [ ] nbnzfc
+------- [ ] rtrbhtb
+-------- [x] dcgvw
+-------- [x] jrhp.fsj
+-------- [ ] sgm
+--------- [ ] tzzfc
+---------- [x] cdmht.jjn
+------- [x] wcfpqqp.tcf
+------- [x] wsww.gdd
+----- [x] thd.cgt
+----- [ ] vgtvctd
+------ [ ] dtm
+------- [ ] pmsvz
+-------- [ ] qctt
+--------- [x] wzh.hwv
+------- [ ] zdzv
+-------- [x] fdvth.rvs
+-------- [ ] jjslblcb
+--------- [ ] grcj
+---------- [x] wcfpqqp.tcf
+-------- [ ] tvq
+--------- [x] jrhp.qnf
+-------- [ ] zgqjbf
+--------- [x] gldg.jrd
+------ [ ] gghjmgqs
+------- [x] qqczbf
+------ [ ] grcj
+------- [ ] qnn
+-------- [x] jmst.mld
+------ [ ] lcpmlcpn
+------- [ ] cbzpzsj
+-------- [x] gldg.jrd
+-------- [x] mfmps.cfl
+-------- [x] qpl.jhn
+-------- [x] sqt.njp
+------- [x] frzslwl.qgd
+------- [x] grcj
+------- [x] pvzslpsn.ztw
+------- [x] rsgsrn
+------ [x] njpnzq.phl
+------ [x] rsgsrn
+------ [x] tzl
+------ [x] vcpzw.qsh
+----- [ ] vzgpfd
+------ [x] cgvcwrfn.jjq
+------ [x] dcgvw
+------ [x] gqqcqtp.hvq
+------ [ ] lnn
+------- [x] dqqvbcf
+------- [x] mczrlg.vmz
+------- [ ] wqccmlvq
+-------- [ ] grcj
+--------- [x] gldg.jrd
+--------- [x] jbqzth.rcj
+--------- [x] jqzmc.sfm
+------- [ ] zgqjbf
+-------- [x] nptpqjd.hzz
+------ [x] pzft.smj
+------ [x] qfszrvm.gnq
+------ [ ] rwrt
+------- [x] jrhp.cmf
+------- [x] mfmps
+------ [ ] thrthq
+------- [x] jrhp.fcj
+------ [ ] zgqjbf
+------- [ ] dpbnq
+-------- [ ] vzgpfd
+--------- [x] bhdtwf
+------- [ ] mfmps
+-------- [x] mfmps.lbq
+------- [ ] rbnzhhn
+-------- [x] svwv.ldj
+----- [x] zgqjbf
+---- [ ] zgqjbf
+----- [x] cmrdgjl.hbd
+--- [ ] lvhfqr
+---- [ ] njzv
+----- [x] bmqh.snz
+----- [x] wcfpqqp.tcf
+---- [ ] sgwzscp
+----- [ ] rnjrj
+------ [x] blrzc
+------ [x] plb.dlq
+----- [x] vzgpfd
+----- [x] zgqjbf.jwf
+----- [x] zjh
+---- [ ] zgqjbf
+----- [x] cmn.gcw
+----- [x] llsnw.phb
+--- [ ] zgvjpnf
+---- [x] nscv.wvb
+---- [x] wzm
+- [ ] qjjgh
+-- [ ] cwslqsb
+--- [x] mqzfncgb.jbf
+-- [x] dcgvw
+-- [ ] fvmmd
+--- [ ] grcj
+---- [x] bjgc
+---- [x] mfmps
+--- [ ] jrhp
+---- [x] wpqh.jfl
+--- [ ] sqmbncp
+---- [x] tzqqm.jqr
+--- [ ] vzgpfd
+---- [x] hqg.qzn
+---- [ ] mvqgb
+----- [ ] vzgpfd
+------ [x] grcj.wwl
+---- [x] vqdtns
+---- [x] wrnhw.mzf
+---- [x] zgqjbf.zzb
+-- [ ] jrhp
+--- [x] dcgvw
+--- [x] vzgpfd
+--- [x] wcfpqqp.tcf
+-- [ ] vflhljrl
+--- [x] gldg.jrd
+--- [x] nscv.wvb
+-- [x] vzgpfd
+- [ ] vpjqpqfm
+-- [x] gfff
+-- [ ] grcj
+--- [ ] grcj
+---- [ ] fcdz
+----- [ ] dpwvm
+------ [ ] chjbpb
+------- [x] pzr
+------ [x] dcgvw
+------ [ ] dsc
+------- [x] nscv.wvb
+------ [x] fclhnmz.cbp
+----- [ ] rmmw
+------ [ ] cqzvcv
+------- [ ] zgqjbf
+-------- [x] nscv.wvb
+------ [ ] hld
+------- [x] pwqs
+------- [x] wfsgg.jgp
+------ [x] jrhp.nnb
+------ [ ] pfvthfw
+------- [ ] grcj
+-------- [x] jrhp
+------ [x] qjmfdjwz.phc
+---- [ ] fswpmd
+----- [x] gldg.jrd
+---- [ ] gvjjjp
+----- [ ] pvzz
+------ [x] nqfzj
+------ [x] nscv.wvb
+------ [ ] qthbl
+------- [x] dcgvw
+----- [x] wdmm.vjv
+---- [ ] jrhp
+----- [x] fct.dcg
+--- [ ] mdvcmm
+---- [ ] crscnnh
+----- [ ] tzbjl
+------ [x] wcfpqqp.tcf
+---- [x] dcdtm.tvp
+---- [x] ftzvrpcw.pff
+---- [x] nnc
+---- [x] nscv.wvb
+---- [ ] ssvd
+----- [x] bsqhzw
+---- [ ] zvvhlw
+----- [x] gldg.jrd
+--- [x] mfmps
+--- [x] nscv.wvb
+-- [ ] hjdwrt
+--- [x] jrhp.fjj
+--- [ ] rpsrm
+---- [x] wmpnpjzd
+--- [x] rsgsrn
+--- [ ] rzn
+---- [x] wcfpqqp.tcf
+--- [x] tvlmvr.flr
+--- [ ] vlbrnq
+---- [x] ccznjt.fqr
+--- [ ] vrcns
+---- [x] dcnnnhn.vhg
+--- [x] wcfpqqp.tcf
+--- [ ] zhwm
+---- [ ] glgs
+----- [x] tcw.qnb
+---- [ ] grcj
+----- [x] qnqb.jqg
+---- [ ] jrhp
+----- [x] pgf.ltc
+-- [ ] mfmps
+--- [ ] dcm
+---- [x] mnrvqg.vmm
+--- [x] mrcn.wtb
+--- [x] mzdgdh.ctn
+-- [ ] plrrsmph
+--- [x] gldg.jrd
+--- [x] jzbswh
+--- [x] wcfpqqp.tcf
+--- [ ] zgqjbf
+---- [ ] cfdr
+----- [x] bzctmbvt.qzr
+---- [ ] hdsnc
+----- [x] ccds.vlz
+-- [ ] rgqtzc
+--- [ ] dblznh
+---- [x] tdv.mwq
+--- [ ] lfpdqm
+---- [ ] cgvnspv
+----- [ ] qnmg
+------ [ ] grcj
+------- [ ] pbn
+-------- [x] dqt.dtv
+------ [x] jbvrp.psn
+------ [x] vfgds.tjv
+------ [x] vtlzgq.dfd
+------ [x] zbvgc.whr
+---- [ ] dthhvrln
+----- [x] wvvczgd.wzs
+---- [ ] jrhp
+----- [ ] bqf
+------ [ ] clgjfn
+------- [x] lwnpggm.mfp
+------ [x] fcr
+------ [x] mcdqnw.prv
+------ [x] zthdgfhl.lqq
+----- [x] rgpwf
+----- [ ] zjhw
+------ [ ] cbwrrzwh
+------- [x] zgqjbf.ffm
+------ [ ] fdz
+------- [ ] wbtzsr
+-------- [x] hzf
+------ [ ] grcj
+------- [x] dcgvw
+------- [ ] rhncgdll
+-------- [ ] vnmbhbhc
+--------- [x] lfcggd.ccw
+------- [ ] vzgpfd
+-------- [x] zdsp.tzg
+-------- [x] zmjjvf.glv
+------- [x] zgv.ndt
+------ [x] grcj.szv
+------ [x] mfmps
+------ [x] mmg.cpr
+------ [x] nmq
+------ [ ] pbnfdq
+------- [x] frqdqhw
+------- [ ] fvjc
+-------- [x] pcvcpptp.dsr
+-------- [x] tszsbtjp.lfl
+------- [x] svwd
+------- [x] tngzpl.lml
+------- [ ] zqhjjjd
+-------- [x] mpdlcjl
+-------- [ ] wfw
+--------- [ ] jrhp
+---------- [x] dcgvw
+---------- [ ] pwrjq
+----------- [x] vclfmjf.tfp
+---------- [ ] zmnv
+----------- [x] mfmps.wzw
+--------- [ ] lwg
+---------- [ ] jrhp
+----------- [x] dcgvw
+---------- [x] lwcfwjh.dtm
+---------- [x] vnl
+--------- [x] rndnc
+--------- [ ] zhrtj
+---------- [x] rsgsrn
+------ [x] tvmswr
+------ [ ] zgqjbf
+------- [x] zqpvm
+---- [ ] vzgpfd
+----- [x] djqqfrbn.cps
+--- [ ] lmnmthm
+---- [x] fqdm.bvm
+---- [x] jdsn.zpr
+---- [x] nscv.wvb
+---- [x] stvscbg
+--- [ ] mfmps
+---- [x] gldg.jrd
+---- [x] jrhp
+---- [ ] lvjg
+----- [x] wcfpqqp.tcf
+---- [x] nscv.wvb
+---- [ ] vzgpfd
+----- [x] hjqng.glq
+---- [ ] zgqjbf
+----- [ ] dqmbmlrf
+------ [ ] bdvhvwct
+------- [x] gldg.jrd
+------- [ ] grcj
+-------- [ ] vzgpfd
+--------- [x] mfmps.tnr
+------ [x] bzhhm.rqp
+------ [x] fgqbj.bcb
+------ [x] fjfq.qbv
+------ [x] hfvvlvqg.sqh
+------ [x] ppljtfjr.hpm
+------ [ ] zgqjbf
+------- [x] lpzsww
+----- [ ] grcj
+------ [x] bwvgdqdr
+----- [ ] hlsr
+------ [x] vzgpfd
+---- [ ] zvpnq
+----- [x] gjbzp.nqg
+----- [x] mfmps.gfp
+----- [ ] rwddqchj
+------ [ ] gnsndln
+------- [x] zgqjbf.wlm
+----- [ ] ssw
+------ [ ] grcj
+------- [x] gldg.jrd
+----- [ ] zgqjbf
+------ [x] vzgpfd.nbz
+------ [x] zdnv.sss
+--- [ ] pcplzs
+---- [x] grcj
+---- [x] rsgsrn
+---- [ ] shmsp
+----- [ ] jrhp
+------ [x] tmlntm
+---- [x] tgc.lzp
+---- [ ] thbznt
+----- [x] mdj.lll
+----- [x] wcfpqqp.tcf
+---- [ ] vtqlszrs
+----- [x] dcgvw
+---- [ ] vzgpfd
+----- [x] hccgnjqh.cdl
+----- [ ] jrhp
+------ [x] bgbmnpq
+------ [x] dcgvw
+----- [x] jvq
+----- [x] mfmps
+----- [ ] ppdfjqbr
+------ [x] dcgvw
+------ [x] gldg.jrd
+------ [x] glhjmpm.sjt
+------ [ ] vthf
+------- [x] vzgpfd.qlg
+------ [ ] vzgpfd
+------- [x] mfmps.zsq
+------ [x] zgqjbf.scm
+----- [ ] vdpvzhrs
+------ [x] vcwrr.jvb
+----- [x] vzgpfd
+----- [x] wclfwhv.chh
+----- [ ] wghzqb
+------ [ ] grcj
+------- [x] nscv.wvb
+------- [x] qpqgf
+------ [ ] hbngsg
+------- [x] bzwnwz.tgj
+------- [x] hwjrgtt.pdm
+------- [ ] mthnljv
+-------- [x] jrhp.rvp
+------ [x] jzvh.pvf
+------ [x] smrq.lvp
+--- [ ] pvfbjm
+---- [x] nscv.wvb
+--- [ ] rnl
+---- [x] dqlncnds.dfn
+---- [ ] nswpmqdd
+----- [x] rtpbgm.gbf
+--- [ ] wqgp
+---- [x] pdfcfc
+--- [ ] zgqjbf
+---- [x] bvlbrq.pdj
+---- [ ] jnjqhzh
+----- [x] htdqwdc.nsr
+----- [x] ppclcr.rms
+----- [x] zmjr.hnt
+---- [ ] smrzsq
+----- [ ] ljvbmm
+------ [x] jmcbrbdl.ccr
+---- [ ] vzgpfd
+----- [ ] bhwd
+------ [x] gldg.jrd
+------ [ ] lmjr
+------- [x] dcgvw
+------ [ ] mfmps
+------- [ ] grcj
+-------- [x] zwbvbfj
+----- [x] dcgvw
+----- [ ] hdcqm
+------ [x] qfb.vhv
+----- [ ] swcvhtmp
+------ [x] rrfnsqw.rvh
+----- [ ] zgqjbf
+------ [x] mfmps.jsq
+------ [x] rsgsrn
+------ [x] zlz
+----- [x] zhtlsdb.ncw
+-- [x] rsgsrn
+-- [x] wjpbr.hdr
+-- [ ] zlv
+--- [x] nscv.wvb
+Solution: 1792222 in 0.002501249313354492
