@@ -118,7 +118,6 @@ class Day7_1(ProblemBase):
     def solve(self, input_string: str) -> int:
         root = self.get_graph(input_string)
         print(root)
-        s = 0
         return sum(
             n.size
             for n in self.filter_nodes(
@@ -150,36 +149,5 @@ class Day7_2(Day7_1):
                 root,
             )
         )
-        print(f"{space_utilized}-{space_needed}={size_target_min}")
-        print(
-            *list(
-                (size_target_min - n.size, n.name, n.size)
-                for n in sorted(
-                    self.filter_nodes(
-                        lambda node: node.file_type == FileType.directory,
-                        root,
-                    ),
-                    key=lambda n: abs(size_target_min - n.size),
-                    reverse=False,
-                )
-            )
-        )
         chosen = min(candidates, key=lambda n: n.size)
-        print(
-            chosen.name,
-            f"{space_utilized} - {chosen.size} = {space_utilized - chosen.size}. {chosen.name}>= {size_target_min} ({chosen.size>=size_target_min})",
-        )
-        # 14733871 high
-        # 10493602 high
-        # 1112963 correct
-        lines = sorted(
-            i
-            for i in [
-                int([t for t in l.split(" ") if t.isdigit()][0])
-                for l in str(root).split("\n")
-                if "[ ]" in l
-            ]
-            if i >= size_target_min
-        )
-        print(lines)
         return chosen
