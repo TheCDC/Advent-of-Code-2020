@@ -106,7 +106,7 @@ class Day7_1(ProblemBase):
                 break
         return root
 
-    def filter_nodes(self, predicate: callable, node: Node):
+    def filter_nodes(self, predicate: Callable[[Node], bool], node: Node):
         stack = [node]
         while stack:
             node = stack.pop()
@@ -129,7 +129,6 @@ class Day7_1(ProblemBase):
         )
         # 77891 low
         # 1792222 correct
-        return s
 
 
 class Day7_2(Day7_1):
@@ -138,4 +137,16 @@ class Day7_2(Day7_1):
     """
 
     def solve(self, input_string: str) -> int:
-        pass
+        root = self.get_graph(input_string)
+        space_total = 70000000
+        space_needed = 30000000
+        space_utilized = root.size
+
+        candidates = self.filter_nodes(
+            lambda node: node is not root
+            and`` node.file_type == FileType.directory
+            and (space_utilized - node.size) <= space_needed,
+            root,
+        )
+        # 14733871 high
+        return min(candidates, key=lambda n: n.size)
