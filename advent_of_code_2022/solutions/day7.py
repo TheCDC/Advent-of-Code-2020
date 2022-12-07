@@ -1,5 +1,5 @@
 from advent_of_code_2022.problem import ProblemBase
-from typing import Iterable, Optional
+from typing import Iterable, Optional, Callable
 from dataclasses import dataclass
 from enum import Enum
 
@@ -45,6 +45,7 @@ class Node:
             [
                 "-" * depth,
                 "[ ]" if self.file_type == FileType.directory else "[x]",
+                f"{self.size}",
                 self.name,
             ]
         )
@@ -59,10 +60,10 @@ class Day7_1(ProblemBase):
     def lines(self, data: str) -> Iterable[str]:
         yield from data.split("\n")
 
-    def solve(self, input_string: str) -> int:
+    def get_graph(self, data: str):
         node = Node("/", [], None, FileType.directory)
         root = node
-        lines = self.lines(input_string)
+        lines = self.lines(data)
         while True:
             try:
                 line = next(lines)
@@ -103,20 +104,38 @@ class Day7_1(ProblemBase):
 
             except StopIteration:
                 break
-        print(root)
-        stack = [root]
-        s = 0
+        return root
+
+    def filter_nodes(self, predicate: callable, node: Node):
+        stack = [node]
         while stack:
             node = stack.pop()
-            if node.file_type == FileType.directory and node.size <= 100000:
-                s += node.size
+            if predicate(node):
+                yield node
             for c in node.children:
                 stack.append(c)
+
+    def solve(self, input_string: str) -> int:
+        root = self.get_graph(input_string)
+        print(root)
+        s = 0
+        return sum(
+            n.size
+            for n in self.filter_nodes(
+                lambda node: node.file_type == FileType.directory
+                and node.size <= 100000,
+                root,
+            )
+        )
         # 77891 low
         # 1792222 correct
         return s
 
 
 class Day7_2(Day7_1):
+    """
+    Find the smallest directory that, if deleted, would free up enough space on the filesystem to run the update. What is the total size of that directory?
+    """
+
     def solve(self, input_string: str) -> int:
         pass
