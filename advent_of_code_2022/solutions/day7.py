@@ -143,8 +143,7 @@ class Day7_2(Day7_1):
         space_utilized = root.size
 
         candidates = self.filter_nodes(
-            lambda node: node is not root
-            and`` node.file_type == FileType.directory
+            lambda node: node.file_type == FileType.directory
             and (space_utilized - node.size) <= space_needed,
             root,
         )
