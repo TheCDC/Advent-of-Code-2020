@@ -1,0 +1,16 @@
+$ cd /
+$ ls
+dir a
+dir b
+dir c
+$ cd a
+$ ls
+20000001 1
+$ cd ..
+$ cd b
+$ ls
+19999999 2
+$ cd ..
+$ cd c
+$ ls
+20000000 3

@@ -141,11 +141,32 @@ class Day7_2(Day7_1):
         space_total = 70000000
         space_needed = 30000000
         space_utilized = root.size
-
-        candidates = self.filter_nodes(
-            lambda node: node.file_type == FileType.directory
-            and (space_utilized - node.size) <= space_needed,
-            root,
+        space_free = space_total - space_utilized
+        size_target_min = space_utilized - space_needed
+        candidates = list(
+            self.filter_nodes(
+                lambda node: node.file_type == FileType.directory
+                and node.size >= size_target_min,
+                root,
+            )
+        )
+        print(
+            *list(
+                (n.name, n.size)
+                for n in sorted(
+                    self.filter_nodes(
+                        lambda node: node.file_type == FileType.directory,
+                        root,
+                    ),
+                    key=lambda n: n.size,
+                    reverse=True,
+                )
+            )
+        )
+        chosen = min(candidates, key=lambda n: n.size)
+        print(
+            chosen.name,
+            f"{space_utilized} - {chosen.size} = {space_utilized - chosen.size}. {chosen.name}>= {size_target_min} ({chosen.size>=size_target_min})",
         )
         # 14733871 high
-        return min(candidates, key=lambda n: n.size)
+        return chosen
