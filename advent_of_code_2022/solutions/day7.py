@@ -141,8 +141,8 @@ class Day7_2(Day7_1):
         space_total = 70000000
         space_needed = 30000000
         space_utilized = root.size
-        space_free = space_total - space_utilized
-        size_target_min = space_utilized - space_needed
+        space_utilized_max = space_total - space_needed
+        size_target_min = space_utilized - space_utilized_max
         candidates = list(
             self.filter_nodes(
                 lambda node: node.file_type == FileType.directory
@@ -150,16 +150,17 @@ class Day7_2(Day7_1):
                 root,
             )
         )
+        print(f"{space_utilized}-{space_needed}={size_target_min}")
         print(
             *list(
-                (n.name, n.size)
+                (size_target_min - n.size, n.name, n.size)
                 for n in sorted(
                     self.filter_nodes(
                         lambda node: node.file_type == FileType.directory,
                         root,
                     ),
-                    key=lambda n: n.size,
-                    reverse=True,
+                    key=lambda n: abs(size_target_min - n.size),
+                    reverse=False,
                 )
             )
         )
@@ -169,4 +170,16 @@ class Day7_2(Day7_1):
             f"{space_utilized} - {chosen.size} = {space_utilized - chosen.size}. {chosen.name}>= {size_target_min} ({chosen.size>=size_target_min})",
         )
         # 14733871 high
+        # 10493602 high
+        # 1112963 correct
+        lines = sorted(
+            i
+            for i in [
+                int([t for t in l.split(" ") if t.isdigit()][0])
+                for l in str(root).split("\n")
+                if "[ ]" in l
+            ]
+            if i >= size_target_min
+        )
+        print(lines)
         return chosen
