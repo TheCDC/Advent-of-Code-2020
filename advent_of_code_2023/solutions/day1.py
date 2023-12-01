@@ -34,21 +34,6 @@ def find_all(a_str, sub):
         start += len(sub)  # use start += 1 to find overlapping matches
 
 
-def wordtodigit(s: str):
-    sf = s
-    while True:
-        found = sorted(
-            [(sf.find(k), k) for k in digit_words if sf.find(k) > -1],
-            key=lambda t: t[0],
-            reverse=True,
-        )
-        print(found)
-        if len(found) == 0:
-            break
-        sf = sf.replace(found[0][1], digit_words[found[0][1]], 1)
-    return sf
-
-
 class Day1_1(ProblemBase):
     def solve(self, input_str: str):
         translate = str.maketrans("", "", "abcdefghijklmnopqrstuvwxyz")
@@ -68,5 +53,4 @@ class Day1_2(ProblemBase):
             )
             num = digit_words[found[0][1]] * 10 + digit_words[found[-1][1]]
             s += num
-            print(found, num)
         return s
