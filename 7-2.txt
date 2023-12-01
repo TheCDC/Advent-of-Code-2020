@@ -1,0 +1,25 @@
+welcome to advent of code 2020
+0: Day1_1
+1: Day1_2
+2: Day2_1
+3: Day2_2
+4: Day3_1
+5: Day3_2
+6: Day4_1
+7: Day4_2
+8: Day5_1
+9: Day5_2
+10: Day6_1
+11: Day6_2
+12: Day7_1
+13: Day7_2
+ChoosePaste problem data lines:
+Solution:  [ ] 1112963 nbnzfc
+- [ ] 693420 rtrbhtb
+-- [x] 264454 dcgvw
+-- [x] 221078 jrhp.fsj
+-- [ ] 207888 sgm
+--- [ ] 207888 tzzfc
+---- [x] 207888 cdmht.jjn
+- [x] 267378 wcfpqqp.tcf
+- [x] 152165 wsww.gdd in 0.0019998550415039062
