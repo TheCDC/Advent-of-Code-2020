@@ -24,7 +24,10 @@ digit_words = {
 }
 
 
-def find_all(a_str, sub):
+def find_all(a_str: str, sub: str):
+    """
+    Find all occurrences of a substring in a string
+    """
     start = 0
     while True:
         start = a_str.find(sub, start)
@@ -45,12 +48,12 @@ class Day1_1(ProblemBase):
 
 class Day1_2(ProblemBase):
     def solve(self, input_str: str):
-        s = 0
-        for l in input_str.split("\n"):
-            found = sorted(
+        found = [
+            sorted(  # sort tuples of (index, substring) by index ascending
                 [(index, k) for k in digit_words for index in find_all(l, k)],
                 key=lambda t: t[0],
             )
-            num = digit_words[found[0][1]] * 10 + digit_words[found[-1][1]]
-            s += num
-        return s
+            for l in input_str.split("\n")
+        ]
+        nums = [digit_words[f[0][1]] * 10 + digit_words[f[-1][1]] for f in found]
+        return sum(nums)
