@@ -1,14 +1,10 @@
 from advent_of_code_2023.problem import ProblemBase
-from collections import Counter
 from functools import reduce
 from itertools import groupby
 
 
 def process_game_line(line: str, func=max):
-    try:
-        game_id = int(line.split(":")[0].split(" ")[1])
-    except IndexError:
-        pass
+    game_id = int(line.split(":")[0].split(" ")[1])
     rounds = line.split(":")[1].split(";")
     pulls = [pull.strip() for r in rounds for pull in r.strip().split(",")]
     pairs = sorted(
