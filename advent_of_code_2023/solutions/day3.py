@@ -1,3 +1,4 @@
+from typing import Any, Generator
 from advent_of_code_2023.problem import ProblemBase
 from functools import reduce
 from itertools import groupby
@@ -18,35 +19,46 @@ def translate(c: str):
         return "s"
 
 
-def flood_fill(grid: list[list[str]]) -> list[list[str]]:
-    # fill out s over d i.e. sd -> ss
-    queue = []
+def iterate_neighbors(
+    grid: list[list[str]],
+    x,
+    y,
+) -> Generator[tuple[str, int, int], Any, None]:
     offsets = [
         (-1, -1),
         (0, -1),
         (1, -1),  # row 1
+        #
         (-1, 0),
         (0, 0),
         (+1, 0),  # row 2
+        #
         (-1, 1),
         (0, 1),
         (+1, 1),  # row 3
     ]
+    row = grid[y]
+    for o in offsets:
+        xnew = x + o[0]
+        ynew = y + o[1]
+        if 0 <= xnew < len(row) and 0 <= ynew < len(grid):
+            valnew = grid[ynew][xnew]
+            ret = (valnew, xnew, ynew)
+            yield ret
+
+
+def flood_fill(grid: list[list[str]]) -> list[list[str]]:
+    # fill out s over d i.e. sd -> ss
+    queue = []
     while True:
         for y, row in enumerate(grid):
             for x, val in enumerate(row):
                 if val == "s":
-                    for o in offsets:
-                        xnew = x + o[0]
-                        ynew = y + o[1]
-                        if (
-                            xnew >= 0
-                            and xnew < len(row)
-                            and ynew >= 0
-                            and ynew < len(grid)
-                        ):
-                            if grid[ynew][xnew] == "d":
-                                queue.append((xnew, ynew))  # save coord for later
+                    for neighbor in iterate_neighbors(grid, x, y):
+                        if neighbor[0] == "d":
+                            queue.append(
+                                (neighbor[1], neighbor[2])
+                            )  # save coord for later
         if len(queue) == 0:
             return
         while queue:
