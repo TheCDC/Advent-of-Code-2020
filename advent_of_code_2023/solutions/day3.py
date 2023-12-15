@@ -136,7 +136,7 @@ class Day3_2(ProblemBase):
         grid_original = [list(row) for row in input_str.split("\n")]
 
         numbers, grid_labelled = relabel_numbers_unique(grid_filled, grid_original)
-        print(*grid_labelled, sep="\n")
+        # print(*grid_labelled, sep="\n")
         edges = []
         for val, x, y in iterate_grid(grid_labelled):
             if val != "s":
