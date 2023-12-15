@@ -86,20 +86,13 @@ def relabel_numbers_unique(
             if prev[0] != "d":
                 count += 1
                 digits = [str(val_old)]
-            digits.append(str(val_old))
+            else:
+                digits.append(str(val_old))
             gridnew[y][x] = count
         else:
             numbers.update({count: int("".join(digits))})
         prev = val
     return numbers, gridnew
-
-
-def get_numbers_by_id(
-    grid_mask_id: list[list[str]], grid_source: list[list[str]], id_target: int
-) -> int:
-    coords_matched = [
-        (val, x, y) for val, x, y in iterate_grid(grid_mask_id) if val == id_target
-    ]
 
 
 def parse_input_to_grid(s: str):
@@ -152,5 +145,9 @@ class Day3_2(ProblemBase):
             neighbors_ids = set(n[0] for n in neighbors if isinstance(n[0], int))
             if len(neighbors_ids) == 2:
                 # this
-                edges.append(neighbors_ids)
-        print(edges, numbers)
+                edges.append(tuple(sorted(neighbors_ids)))
+        # print(edges, numbers)
+        print(f"Found {len(numbers)} numbers")
+        print(f"Found {len(edges)} gears")
+        print(sum(numbers[e[0]] * numbers[e[1]] for e in edges))
+        # 80694070 correct first try!
