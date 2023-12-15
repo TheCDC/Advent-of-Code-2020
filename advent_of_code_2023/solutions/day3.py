@@ -1,7 +1,6 @@
 from typing import Any, Generator
 from advent_of_code_2023.problem import ProblemBase
-from functools import reduce
-from itertools import groupby
+from copy import deepcopy
 
 DIGITS = set(map(str, range(1, 10)))
 
@@ -20,10 +19,10 @@ def translate(c: str):
 
 
 def iterate_neighbors(
-    grid: list[list[str]],
+    grid: list[list[Any]],
     x,
     y,
-) -> Generator[tuple[str, int, int], Any, None]:
+) -> Generator[tuple[Any, int, int], Any, None]:
     offsets = [
         (-1, -1),
         (0, -1),
@@ -66,6 +65,43 @@ def flood_fill(grid: list[list[str]]) -> list[list[str]]:
             grid[coord[1]][coord[0]] = "s"
 
 
+def iterate_grid(grid: list[list]):
+    for y, row in enumerate(grid):
+        for x, val in enumerate(row):
+            yield (val, x, y)
+
+
+def relabel_numbers_unique(
+    grid_masked: list[list[str]], grid_original: list[list[str]]
+):
+    # none-d,d-d,d-notnone
+    gridnew = deepcopy(grid_masked)
+    count = 0
+    prev = (None, 0, 0)
+    numbers: dict[int, int] = dict()
+    digits: list[str] = []
+    for val, x, y in iterate_grid(grid_masked):
+        val_old = grid_original[y][x]
+        if val == "d":
+            if prev[0] != "d":
+                count += 1
+                digits = [str(val_old)]
+            digits.append(str(val_old))
+            gridnew[y][x] = count
+        else:
+            numbers.update({count: int("".join(digits))})
+        prev = val
+    return numbers, gridnew
+
+
+def get_numbers_by_id(
+    grid_mask_id: list[list[str]], grid_source: list[list[str]], id_target: int
+) -> int:
+    coords_matched = [
+        (val, x, y) for val, x, y in iterate_grid(grid_mask_id) if val == id_target
+    ]
+
+
 def parse_input_to_grid(s: str):
     grid = [[translate(c) for c in list(row)] for row in s.split("\n")]
     return grid
@@ -103,4 +139,18 @@ class Day3_1(ProblemBase):
 
 class Day3_2(ProblemBase):
     def solve(self, input_str: str):
-        pass
+        grid_filled = parse_input_to_grid(input_str)
+        grid_original = [list(row) for row in input_str.split("\n")]
+
+        numbers, grid_labelled = relabel_numbers_unique(grid_filled, grid_original)
+        print(*grid_labelled, sep="\n")
+        edges = []
+        for val, x, y in iterate_grid(grid_labelled):
+            if val != "s":
+                continue
+            neighbors = list(iterate_neighbors(grid_labelled, x, y))
+            neighbors_ids = set(n[0] for n in neighbors if isinstance(n[0], int))
+            if len(neighbors_ids) == 2:
+                # this
+                edges.append(neighbors_ids)
+        print(edges, numbers)
