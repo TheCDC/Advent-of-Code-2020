@@ -66,7 +66,6 @@ def interative_pick(l: list) -> int:
 def main():
     print("welcome to advent of code 2023")
     solutions = get_solutions()
-    print('get_solutions',solutions)
     index = int(sys.argv[1]) if len(sys.argv) > 1 else -1
     if index == -1:
         index = interative_pick([s.__name__ for s in solutions])
