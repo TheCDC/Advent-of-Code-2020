@@ -7,7 +7,7 @@ def parse_problem(s):
         a = l.split(":")
         a1 = a[0]
         a2 = a[1]
-        cardnum = a1.split(" ")[1]
+        cardnum = a1.split()[1]
         b = a2.split("|")
         b1 = list(map(int, b[0].strip().split()))
         b2 = list(map(int, b[1].strip().split()))
