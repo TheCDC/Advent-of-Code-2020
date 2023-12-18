@@ -24,7 +24,7 @@ def score_count_winners(n: int) -> int:
 
 
 def get_copies_numbers(game: tuple[int, list[int], list[int]]):
-    yield from (n + game[0]+1 for n in range(count_winners(game)[1]))
+    yield from (n + game[0] + 1 for n in range(count_winners(game)[1]))
 
 
 class Day4_1(ProblemBase):
@@ -49,9 +49,9 @@ class Day4_2(ProblemBase):
             cardnum = game[0]
             score = game_scored[1]
             copies = list(get_copies_numbers(game))
-            if counted %10000 == 0:
+            if counted % 100000 == 0:
                 print(len(queue))
             # print(cardnum, score, copies)
-            queue.extend([parsed[i-1] for i in copies])
+            queue.extend([parsed[i - 1] for i in copies])
         return counted
         # 10212704 correct!
