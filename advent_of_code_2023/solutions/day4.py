@@ -40,27 +40,30 @@ class Day4_2(ProblemBase):
     def solve(self, input_str: str):
         parsed = list(map(count_winners, parse_problem(input_str)))
 
-        queue = parsed[:]
         node_values: dict[int:int] = dict()
         leaves = [p for p in parsed if p[-1] == 0]
-        for l in leaves:
-            node_values.update({l[0][0]: 1})
+        node_values.update({l[0][0]: 1 for l in leaves})
         # print("=" * 30)
         # print("leaves", *sorted(node_values.items()))
-        while len(node_values) != len(parsed):
-            leaves_resolved = [
-                p
+        while len(node_values) != len(parsed):  # until all nodes have been resolved
+            leaves_resolved = [  # the new leaf nodes are
+                p  # each game where
                 for p in parsed
-                if p[0][0] not in node_values
-                and all(x in node_values for x in get_copies_numbers(p[0]))
+                if p[0][0] not in node_values  # its sum hasn't been resolved
+                and all(
+                    x in node_values for x in get_copies_numbers(p[0])
+                )  # and all its children have been resolved
             ]
-            for l in leaves_resolved:
-                sum_children = sum(node_values[i] for i in get_copies_numbers(l[0]))
-                sum_self = sum_children + 1
-                node_values.update({l[0][0]: sum_self})
+            updates = {  # resolve the new leaf nodes by
+                l[0][0]: sum(
+                    node_values[i] for i in get_copies_numbers(l[0])
+                )  # summing values of all child nodes
+                + 1  # plus one to count this node
+                for l in leaves_resolved
+            }
+            node_values.update(updates)
         # print("=" * 30)
         # print(*(i for i in sorted(node_values.items())), sep="\n")
         result = sum(b for _, b in node_values.items())
-        # print(result)
         return result
         # 10212704 correct!
