@@ -41,6 +41,18 @@ class Day4_2(ProblemBase):
         parsed = list(map(count_winners, parse_problem(input_str)))
 
         queue = parsed[:]
+        parsed_initial = [[p, 1] for p in parsed[:]]
+        # node_values: dict[int:int] = dict()
+
+        for index, node_child in reversed(list(enumerate(parsed_initial))):
+            id_child = node_child[0][0][0]
+            for index_parent, node_parent in enumerate(parsed_initial[0:index]):
+                ids_children = set(n - 1 for n in get_copies_numbers(node_parent[0][0]))
+                if id_child in ids_children:
+                    node_parent[-1] += node_child[-1]
+        print(*parsed_initial, sum(p[-1] for p in parsed_initial), sep="\n")
+        return
+
         counted = 0
         while queue:
             counted += 1
