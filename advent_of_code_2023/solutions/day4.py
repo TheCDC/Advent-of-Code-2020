@@ -41,29 +41,26 @@ class Day4_2(ProblemBase):
         parsed = list(map(count_winners, parse_problem(input_str)))
 
         queue = parsed[:]
-        parsed_initial = [[p, 1] for p in parsed[:]]
-        # node_values: dict[int:int] = dict()
-
-        for index, node_child in reversed(list(enumerate(parsed_initial))):
-            id_child = node_child[0][0][0]
-            for index_parent, node_parent in enumerate(parsed_initial[0:index]):
-                ids_children = set(n - 1 for n in get_copies_numbers(node_parent[0][0]))
-                if id_child in ids_children:
-                    node_parent[-1] += node_child[-1]
-        print(*parsed_initial, sum(p[-1] for p in parsed_initial), sep="\n")
-        return
-
-        counted = 0
-        while queue:
-            counted += 1
-            game_scored = queue.pop()
-            game = game_scored[0]
-            cardnum = game[0]
-            score = game_scored[1]
-            copies = list(get_copies_numbers(game))
-            if counted % 100000 == 0:
-                print(len(queue))
-            # print(cardnum, score, copies)
-            queue.extend([parsed[i - 1] for i in copies])
-        return counted
+        node_values: dict[int:int] = dict()
+        leaves = [p for p in parsed if p[-1] == 0]
+        for l in leaves:
+            node_values.update({l[0][0]: 1})
+        # print("=" * 30)
+        # print("leaves", *sorted(node_values.items()))
+        while len(node_values) != len(parsed):
+            leaves_resolved = [
+                p
+                for p in parsed
+                if p[0][0] not in node_values
+                and all(x in node_values for x in get_copies_numbers(p[0]))
+            ]
+            for l in leaves_resolved:
+                sum_children = 1 + sum(node_values[i] for i in get_copies_numbers(l[0]))
+                sum_self = sum_children + 1
+                node_values.update({l[0][0]: sum_self})
+        # print("=" * 30)
+        # print(*(i for i in sorted(node_values.items())), sep="\n")
+        result = sum(b for _, b in node_values.items())
+        # print(result)
+        return result
         # 10212704 correct!
