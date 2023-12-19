@@ -55,7 +55,7 @@ class Day4_2(ProblemBase):
                 and all(x in node_values for x in get_copies_numbers(p[0]))
             ]
             for l in leaves_resolved:
-                sum_children = 1 + sum(node_values[i] for i in get_copies_numbers(l[0]))
+                sum_children = sum(node_values[i] for i in get_copies_numbers(l[0]))
                 sum_self = sum_children + 1
                 node_values.update({l[0][0]: sum_self})
         # print("=" * 30)
