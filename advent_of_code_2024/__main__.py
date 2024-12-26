@@ -3,7 +3,7 @@ import advent_of_code_2022.solutions as solutions
 from advent_of_code_2022.solutions import SOLUTIONS
 from time import time
 
-print("welcome to advent of code 2020")
+print("welcome to advent of code 2024")
 index = -1
 while index < 0 or (index >= len(SOLUTIONS)):
     print(

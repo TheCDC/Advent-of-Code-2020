@@ -1,0 +1,501 @@
+welcome to advent of code 2020
+0: Day1_1
+1: Day1_2
+2: Day2_1
+3: Day2_2
+4: Day3_1
+5: Day3_2
+6: Day4_1
+7: Day4_2
+8: Day5_1
+9: Day5_2
+10: Day6_1
+11: Day6_2
+12: Day7_1
+13: Day7_2
+ChoosePaste problem data lines:
+ [ ] 41035571 /
+- [x] 246027 gldg.jrd
+- [ ] 14733871 qffvbf
+-- [ ] 198360 dcqf
+--- [ ] 198360 gcjmpnsl
+---- [x] 198360 gldg.jrd
+-- [ ] 56512 grcj
+--- [x] 56512 grgtnhn.zdn
+-- [ ] 592304 hwllqcd
+--- [x] 100505 frzf.mzc
+--- [x] 209030 gldg.jrd
+--- [x] 9330 jjtjjlsr.dnl
+--- [x] 191034 mfmps.vjt
+--- [x] 82405 nscv.wvb
+-- [x] 76103 jrhp.hgg
+-- [x] 253696 nscv.wvb
+-- [ ] 3063294 stnrzs
+--- [ ] 360811 gmtmfpmb
+---- [x] 279472 hswhjhmj
+---- [x] 81339 rsgsrn
+--- [ ] 386131 jrhp
+---- [ ] 33215 fpmnp
+----- [x] 33215 grcj.tcj
+---- [x] 99771 grcj.scb
+---- [ ] 206893 hjglg
+----- [x] 206893 tctfwpf.jhv
+---- [ ] 46252 hwvzv
+----- [ ] 46252 mfmps
+------ [x] 46252 rjrmbqwr.wbj
+--- [ ] 573757 rhf
+---- [x] 222859 dcgvw
+---- [x] 41140 grcj.qzh
+---- [ ] 92243 zcjh
+----- [x] 92243 prqhbzl.hls
+---- [x] 217515 zgqjbf
+--- [ ] 1742595 wzjtd
+---- [ ] 158778 bnjj
+----- [x] 158778 zjdvggcz.fhr
+---- [ ] 247203 dhhpf
+----- [x] 228680 gldg.jrd
+----- [x] 18523 wcfpqqp.tcf
+---- [ ] 272622 grcj
+----- [ ] 5449 bcbspw
+------ [x] 5449 rsgsrn
+----- [ ] 135338 mpq
+------ [x] 135338 mfmps
+----- [ ] 131835 pjzw
+------ [ ] 131835 cpffwn
+------- [x] 131835 rnwqngz
+---- [ ] 420301 jqmnp
+----- [x] 281939 nscv.wvb
+----- [x] 103834 rsgsrn
+----- [x] 34528 wcfpqqp.tcf
+---- [x] 16602 mfmps.dht
+---- [ ] 211470 mrgh
+----- [ ] 211470 grcj
+------ [x] 211470 bbzm.sbq
+---- [x] 112236 rsgsrn
+---- [ ] 59532 wqwwwfd
+----- [x] 59532 blfr.lqh
+---- [x] 243851 zgqjbf.bjh
+-- [ ] 10493602 vzgpfd
+--- [ ] 9335850 grcj
+---- [x] 160936 jbfsbsnn.sgj
+---- [ ] 684848 mfmps
+----- [x] 176441 dcgvw
+----- [x] 9961 grcj.sdl
+----- [ ] 43593 mfmps
+------ [ ] 43593 ndqjhlhp
+------- [x] 43593 wcfpqqp.tcf
+----- [x] 181303 nscv.wvb
+----- [x] 273550 zfjhqtp
+---- [ ] 391512 mfqjssr
+----- [x] 137211 gldg.jrd
+----- [x] 254301 grcj.rgv
+---- [ ] 7901819 vzgpfd
+----- [ ] 490140 hqnfwtj
+------ [x] 155738 cjpqzq
+------ [x] 128579 cnsm.mdt
+------ [x] 150972 fpmjd
+------ [x] 54851 rsgsrn
+----- [ ] 1699089 mtqzh
+------ [x] 288824 bjnhtwg
+------ [x] 209838 gldg.jrd
+------ [x] 87464 jgdhm.wrb
+------ [ ] 1112963 nbnzfc
+------- [ ] 693420 rtrbhtb
+-------- [x] 264454 dcgvw
+-------- [x] 221078 jrhp.fsj
+-------- [ ] 207888 sgm
+--------- [ ] 207888 tzzfc
+---------- [x] 207888 cdmht.jjn
+------- [x] 267378 wcfpqqp.tcf
+------- [x] 152165 wsww.gdd
+----- [x] 215717 thd.cgt
+----- [ ] 2784800 vgtvctd
+------ [ ] 975429 dtm
+------- [ ] 285640 pmsvz
+-------- [ ] 285640 qctt
+--------- [x] 285640 wzh.hwv
+------- [ ] 689789 zdzv
+-------- [x] 178732 fdvth.rvs
+-------- [ ] 186485 jjslblcb
+--------- [ ] 186485 grcj
+---------- [x] 186485 wcfpqqp.tcf
+-------- [ ] 48035 tvq
+--------- [x] 48035 jrhp.qnf
+-------- [ ] 276537 zgqjbf
+--------- [x] 276537 gldg.jrd
+------ [ ] 238068 gghjmgqs
+------- [x] 238068 qqczbf
+------ [ ] 117284 grcj
+------- [ ] 117284 qnn
+-------- [x] 117284 jmst.mld
+------ [ ] 836772 lcpmlcpn
+------- [ ] 360446 cbzpzsj
+-------- [x] 36456 gldg.jrd
+-------- [x] 95656 mfmps.cfl
+-------- [x] 2578 qpl.jhn
+-------- [x] 225756 sqt.njp
+------- [x] 53036 frzslwl.qgd
+------- [x] 82430 grcj
+------- [x] 273768 pvzslpsn.ztw
+------- [x] 67092 rsgsrn
+------ [x] 57113 njpnzq.phl
+------ [x] 279566 rsgsrn
+------ [x] 59404 tzl
+------ [x] 221164 vcpzw.qsh
+----- [ ] 2647791 vzgpfd
+------ [x] 266582 cgvcwrfn.jjq
+------ [x] 230770 dcgvw
+------ [x] 266361 gqqcqtp.hvq
+------ [ ] 685067 lnn
+------- [x] 13294 dqqvbcf
+------- [x] 268614 mczrlg.vmz
+------- [ ] 230904 wqccmlvq
+-------- [ ] 230904 grcj
+--------- [x] 55504 gldg.jrd
+--------- [x] 6925 jbqzth.rcj
+--------- [x] 168475 jqzmc.sfm
+------- [ ] 172255 zgqjbf
+-------- [x] 172255 nptpqjd.hzz
+------ [x] 86659 pzft.smj
+------ [x] 180519 qfszrvm.gnq
+------ [ ] 315671 rwrt
+------- [x] 78039 jrhp.cmf
+------- [x] 237632 mfmps
+------ [ ] 122514 thrthq
+------- [x] 122514 jrhp.fcj
+------ [ ] 493648 zgqjbf
+------- [ ] 278947 dpbnq
+-------- [ ] 278947 vzgpfd
+--------- [x] 278947 bhdtwf
+------- [ ] 118315 mfmps
+-------- [x] 118315 mfmps.lbq
+------- [ ] 96386 rbnzhhn
+-------- [x] 96386 svwv.ldj
+----- [x] 64282 zgqjbf
+---- [ ] 196735 zgqjbf
+----- [x] 196735 cmrdgjl.hbd
+--- [ ] 887908 lvhfqr
+---- [ ] 190383 njzv
+----- [x] 60680 bmqh.snz
+----- [x] 129703 wcfpqqp.tcf
+---- [ ] 370556 sgwzscp
+----- [ ] 305786 rnjrj
+------ [x] 242223 blrzc
+------ [x] 63563 plb.dlq
+----- [x] 1799 vzgpfd
+----- [x] 37203 zgqjbf.jwf
+----- [x] 25768 zjh
+---- [ ] 326969 zgqjbf
+----- [x] 91151 cmn.gcw
+----- [x] 235818 llsnw.phb
+--- [ ] 269844 zgvjpnf
+---- [x] 158932 nscv.wvb
+---- [x] 110912 wzm
+- [ ] 2726509 qjjgh
+-- [ ] 49934 cwslqsb
+--- [x] 49934 mqzfncgb.jbf
+-- [x] 34405 dcgvw
+-- [ ] 1743113 fvmmd
+--- [ ] 243344 grcj
+---- [x] 32276 bjgc
+---- [x] 211068 mfmps
+--- [ ] 218633 jrhp
+---- [x] 218633 wpqh.jfl
+--- [ ] 137187 sqmbncp
+---- [x] 137187 tzqqm.jqr
+--- [ ] 1143949 vzgpfd
+---- [x] 258286 hqg.qzn
+---- [ ] 200955 mvqgb
+----- [ ] 200955 vzgpfd
+------ [x] 200955 grcj.wwl
+---- [x] 236455 vqdtns
+---- [x] 255724 wrnhw.mzf
+---- [x] 192529 zgqjbf.zzb
+-- [ ] 348221 jrhp
+--- [x] 86368 dcgvw
+--- [x] 16512 vzgpfd
+--- [x] 245341 wcfpqqp.tcf
+-- [ ] 310921 vflhljrl
+--- [x] 82670 gldg.jrd
+--- [x] 228251 nscv.wvb
+-- [x] 239915 vzgpfd
+- [ ] 23329164 vpjqpqfm
+-- [x] 246705 gfff
+-- [ ] 4250368 grcj
+--- [ ] 2582017 grcj
+---- [ ] 1352540 fcdz
+----- [ ] 385294 dpwvm
+------ [ ] 41211 chjbpb
+------- [x] 41211 pzr
+------ [x] 118852 dcgvw
+------ [ ] 217960 dsc
+------- [x] 217960 nscv.wvb
+------ [x] 7271 fclhnmz.cbp
+----- [ ] 967246 rmmw
+------ [ ] 204153 cqzvcv
+------- [ ] 204153 zgqjbf
+-------- [x] 204153 nscv.wvb
+------ [ ] 358514 hld
+------- [x] 113905 pwqs
+------- [x] 244609 wfsgg.jgp
+------ [x] 99687 jrhp.nnb
+------ [ ] 207441 pfvthfw
+------- [ ] 207441 grcj
+-------- [x] 207441 jrhp
+------ [x] 97451 qjmfdjwz.phc
+---- [ ] 99446 fswpmd
+----- [x] 99446 gldg.jrd
+---- [ ] 954052 gvjjjp
+----- [ ] 674981 pvzz
+------ [x] 196937 nqfzj
+------ [x] 273491 nscv.wvb
+------ [ ] 204553 qthbl
+------- [x] 204553 dcgvw
+----- [x] 279071 wdmm.vjv
+---- [ ] 175979 jrhp
+----- [x] 175979 fct.dcg
+--- [ ] 1293921 mdvcmm
+---- [ ] 112219 crscnnh
+----- [ ] 112219 tzbjl
+------ [x] 112219 wcfpqqp.tcf
+---- [x] 109461 dcdtm.tvp
+---- [x] 279544 ftzvrpcw.pff
+---- [x] 124059 nnc
+---- [x] 274104 nscv.wvb
+---- [ ] 227906 ssvd
+----- [x] 227906 bsqhzw
+---- [ ] 166628 zvvhlw
+----- [x] 166628 gldg.jrd
+--- [x] 285341 mfmps
+--- [x] 89089 nscv.wvb
+-- [ ] 1625936 hjdwrt
+--- [x] 59644 jrhp.fjj
+--- [ ] 282957 rpsrm
+---- [x] 282957 wmpnpjzd
+--- [x] 221706 rsgsrn
+--- [ ] 142973 rzn
+---- [x] 142973 wcfpqqp.tcf
+--- [x] 14344 tvlmvr.flr
+--- [ ] 79661 vlbrnq
+---- [x] 79661 ccznjt.fqr
+--- [ ] 262645 vrcns
+---- [x] 262645 dcnnnhn.vhg
+--- [x] 39113 wcfpqqp.tcf
+--- [ ] 522893 zhwm
+---- [ ] 282326 glgs
+----- [x] 282326 tcw.qnb
+---- [ ] 43293 grcj
+----- [x] 43293 qnqb.jqg
+---- [ ] 197274 jrhp
+----- [x] 197274 pgf.ltc
+-- [ ] 128743 mfmps
+--- [ ] 72397 dcm
+---- [x] 72397 mnrvqg.vmm
+--- [x] 47902 mrcn.wtb
+--- [x] 8444 mzdgdh.ctn
+-- [ ] 563369 plrrsmph
+--- [x] 216816 gldg.jrd
+--- [x] 148190 jzbswh
+--- [x] 120319 wcfpqqp.tcf
+--- [ ] 78044 zgqjbf
+---- [ ] 34272 cfdr
+----- [x] 34272 bzctmbvt.qzr
+---- [ ] 43772 hdsnc
+----- [x] 43772 ccds.vlz
+-- [ ] 16068117 rgqtzc
+--- [ ] 65168 dblznh
+---- [x] 65168 tdv.mwq
+--- [ ] 5887071 lfpdqm
+---- [ ] 833689 cgvnspv
+----- [ ] 833689 qnmg
+------ [ ] 22094 grcj
+------- [ ] 22094 pbn
+-------- [x] 22094 dqt.dtv
+------ [x] 70937 jbvrp.psn
+------ [x] 207093 vfgds.tjv
+------ [x] 282330 vtlzgq.dfd
+------ [x] 251235 zbvgc.whr
+---- [ ] 206159 dthhvrln
+----- [x] 206159 wvvczgd.wzs
+---- [ ] 4709035 jrhp
+----- [ ] 838790 bqf
+------ [ ] 274929 clgjfn
+------- [x] 274929 lwnpggm.mfp
+------ [x] 58416 fcr
+------ [x] 216467 mcdqnw.prv
+------ [x] 288978 zthdgfhl.lqq
+----- [x] 5738 rgpwf
+----- [ ] 3864507 zjhw
+------ [ ] 223425 cbwrrzwh
+------- [x] 223425 zgqjbf.ffm
+------ [ ] 257781 fdz
+------- [ ] 257781 wbtzsr
+-------- [x] 257781 hzf
+------ [ ] 294437 grcj
+------- [x] 58266 dcgvw
+------- [ ] 10019 rhncgdll
+-------- [ ] 10019 vnmbhbhc
+--------- [x] 10019 lfcggd.ccw
+------- [ ] 213649 vzgpfd
+-------- [x] 134965 zdsp.tzg
+-------- [x] 78684 zmjjvf.glv
+------- [x] 12503 zgv.ndt
+------ [x] 219439 grcj.szv
+------ [x] 285756 mfmps
+------ [x] 113288 mmg.cpr
+------ [x] 236059 nmq
+------ [ ] 1958041 pbnfdq
+------- [x] 173729 frqdqhw
+------- [ ] 222009 fvjc
+-------- [x] 88907 pcvcpptp.dsr
+-------- [x] 133102 tszsbtjp.lfl
+------- [x] 41055 svwd
+------- [x] 106934 tngzpl.lml
+------- [ ] 1414314 zqhjjjd
+-------- [x] 61260 mpdlcjl
+-------- [ ] 1353054 wfw
+--------- [ ] 559320 jrhp
+---------- [x] 276912 dcgvw
+---------- [ ] 198180 pwrjq
+----------- [x] 198180 vclfmjf.tfp
+---------- [ ] 84228 zmnv
+----------- [x] 84228 mfmps.wzw
+--------- [ ] 282613 lwg
+---------- [ ] 86877 jrhp
+----------- [x] 86877 dcgvw
+---------- [x] 50562 lwcfwjh.dtm
+---------- [x] 145174 vnl
+--------- [x] 226393 rndnc
+--------- [ ] 284728 zhrtj
+---------- [x] 284728 rsgsrn
+------ [x] 74013 tvmswr
+------ [ ] 202268 zgqjbf
+------- [x] 202268 zqpvm
+---- [ ] 138188 vzgpfd
+----- [x] 138188 djqqfrbn.cps
+--- [ ] 471578 lmnmthm
+---- [x] 2715 fqdm.bvm
+---- [x] 37482 jdsn.zpr
+---- [x] 255467 nscv.wvb
+---- [x] 175914 stvscbg
+--- [ ] 3058789 mfmps
+---- [x] 288712 gldg.jrd
+---- [x] 182389 jrhp
+---- [ ] 184529 lvjg
+----- [x] 184529 wcfpqqp.tcf
+---- [x] 41815 nscv.wvb
+---- [ ] 265556 vzgpfd
+----- [x] 265556 hjqng.glq
+---- [ ] 1289198 zgqjbf
+----- [ ] 913789 dqmbmlrf
+------ [ ] 150003 bdvhvwct
+------- [x] 76840 gldg.jrd
+------- [ ] 73163 grcj
+-------- [ ] 73163 vzgpfd
+--------- [x] 73163 mfmps.tnr
+------ [x] 254123 bzhhm.rqp
+------ [x] 172950 fgqbj.bcb
+------ [x] 7417 fjfq.qbv
+------ [x] 188707 hfvvlvqg.sqh
+------ [x] 78273 ppljtfjr.hpm
+------ [ ] 62316 zgqjbf
+------- [x] 62316 lpzsww
+----- [ ] 160721 grcj
+------ [x] 160721 bwvgdqdr
+----- [ ] 214688 hlsr
+------ [x] 214688 vzgpfd
+---- [ ] 806590 zvpnq
+----- [x] 34940 gjbzp.nqg
+----- [x] 165326 mfmps.gfp
+----- [ ] 223320 rwddqchj
+------ [ ] 223320 gnsndln
+------- [x] 223320 zgqjbf.wlm
+----- [ ] 251146 ssw
+------ [ ] 251146 grcj
+------- [x] 251146 gldg.jrd
+----- [ ] 131858 zgqjbf
+------ [x] 45732 vzgpfd.nbz
+------ [x] 86126 zdnv.sss
+--- [ ] 3347728 pcplzs
+---- [x] 90287 grcj
+---- [x] 99213 rsgsrn
+---- [ ] 132784 shmsp
+----- [ ] 132784 jrhp
+------ [x] 132784 tmlntm
+---- [x] 156357 tgc.lzp
+---- [ ] 461323 thbznt
+----- [x] 190697 mdj.lll
+----- [x] 270626 wcfpqqp.tcf
+---- [ ] 44292 vtqlszrs
+----- [x] 44292 dcgvw
+---- [ ] 2363472 vzgpfd
+----- [x] 13921 hccgnjqh.cdl
+----- [ ] 257306 jrhp
+------ [x] 237755 bgbmnpq
+------ [x] 19551 dcgvw
+----- [x] 23850 jvq
+----- [x] 113952 mfmps
+----- [ ] 490735 ppdfjqbr
+------ [x] 1458 dcgvw
+------ [x] 563 gldg.jrd
+------ [x] 155487 glhjmpm.sjt
+------ [ ] 205316 vthf
+------- [x] 205316 vzgpfd.qlg
+------ [ ] 46597 vzgpfd
+------- [x] 46597 mfmps.zsq
+------ [x] 81314 zgqjbf.scm
+----- [ ] 13302 vdpvzhrs
+------ [x] 13302 vcwrr.jvb
+----- [x] 190631 vzgpfd
+----- [x] 128060 wclfwhv.chh
+----- [ ] 1131715 wghzqb
+------ [ ] 489242 grcj
+------- [x] 258764 nscv.wvb
+------- [x] 230478 qpqgf
+------ [ ] 247292 hbngsg
+------- [x] 101699 bzwnwz.tgj
+------- [x] 144196 hwjrgtt.pdm
+------- [ ] 1397 mthnljv
+-------- [x] 1397 jrhp.rvp
+------ [x] 112293 jzvh.pvf
+------ [x] 282888 smrq.lvp
+--- [ ] 251602 pvfbjm
+---- [x] 251602 nscv.wvb
+--- [ ] 495837 rnl
+---- [x] 233954 dqlncnds.dfn
+---- [ ] 261883 nswpmqdd
+----- [x] 261883 rtpbgm.gbf
+--- [ ] 23813 wqgp
+---- [x] 23813 pdfcfc
+--- [ ] 2466531 zgqjbf
+---- [x] 15126 bvlbrq.pdj
+---- [ ] 732862 jnjqhzh
+----- [x] 243919 htdqwdc.nsr
+----- [x] 254015 ppclcr.rms
+----- [x] 234928 zmjr.hnt
+---- [ ] 235241 smrzsq
+----- [ ] 235241 ljvbmm
+------ [x] 235241 jmcbrbdl.ccr
+---- [ ] 1483302 vzgpfd
+----- [ ] 328446 bhwd
+------ [x] 122018 gldg.jrd
+------ [ ] 40588 lmjr
+------- [x] 40588 dcgvw
+------ [ ] 165840 mfmps
+------- [ ] 165840 grcj
+-------- [x] 165840 zwbvbfj
+----- [x] 38855 dcgvw
+----- [ ] 156543 hdcqm
+------ [x] 156543 qfb.vhv
+----- [ ] 227964 swcvhtmp
+------ [x] 227964 rrfnsqw.rvh
+----- [ ] 613390 zgqjbf
+------ [x] 94269 mfmps.jsq
+------ [x] 266360 rsgsrn
+------ [x] 252761 zlz
+----- [x] 118104 zhtlsdb.ncw
+-- [x] 175555 rsgsrn
+-- [x] 142983 wjpbr.hdr
+-- [ ] 127388 zlv
+--- [x] 127388 nscv.wvb
+Solution: 1792222 in 0.0019998550415039062
