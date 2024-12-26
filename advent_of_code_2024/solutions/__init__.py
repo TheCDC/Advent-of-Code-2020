@@ -8,7 +8,7 @@ from advent_of_code_2024.solutions.day1 import Day1_1, Day1_2
 
 SOLUTIONS = [
     Day1_1,
-    # Day1_2,
+    Day1_2,
     # Day2_1,
     # Day2_2,
     # Day3_1,
